@@ -5,8 +5,9 @@
 
 
 void workFile(char *pointeurChaine){
+    printf("contenu : '%s'\n", pointeurChaine);
     FILE *fichier = NULL;
-    printf("Voulez vous supprimer le contenu du fichier avant d'ajouter votre phrase ? (O/N)");
+    printf("Voulez vous supprimer le contenu du fichier avant d'ajouter votre phrase ? (O/N) : ");
     char ouiNon;
     scanf("%c", &ouiNon);
 
@@ -18,7 +19,7 @@ void workFile(char *pointeurChaine){
     }
 
     if (fichier == NULL){
-        printf("Erreur lors du chargement du fichier");
+        printf("Erreur lors du chargement du fichier\n");
         return;
     }
     else{
