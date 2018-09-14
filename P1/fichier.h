@@ -1,0 +1,1 @@
+void workFile(char *pointeurChaine);
